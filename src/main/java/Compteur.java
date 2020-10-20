@@ -11,10 +11,10 @@ public class Compteur {
     public void setVal(int val) {
         this.val = val;
     }
-public void inc(){
+public synchronized void inc(){
         this.val++;
 }
-public void dec(){
+public synchronized void dec(){
         this.val--;
 }
 }
