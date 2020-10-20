@@ -6,7 +6,8 @@ public class tPlus extends Thread {
     }
     public void run(){
         for(int i=0;i<100000;i++){
-           this.cpt.inc();
+            synchronized(cpt){this.cpt.inc();}
+
         }
     }
 }
